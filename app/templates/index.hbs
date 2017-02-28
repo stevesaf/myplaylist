@@ -1,0 +1,13 @@
+<h1> WELCOME TO UR DREAM.</h1>
+
+<p>Bet u never had a sweet playlist app like this 1. Steve Jobs would be jealous</p>
+
+<ul>
+  {{#each model as |playlist|}}
+    {{playlist-tile playlist=playlist destroyPlaylist="destroyPlaylist"}}
+  {{/each}}
+</ul>
+
+{{new-playlist savePlaylist2="savePlaylist3"}}
+{{#link-to 'about'}}Come n learn bout us{{/link-to}}
+{{#link-to 'contact'}}Speak with us{{/link-to}}

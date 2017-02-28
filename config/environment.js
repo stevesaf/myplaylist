@@ -16,6 +16,15 @@ module.exports = function(environment) {
         Date: false
       }
     },
+  firebase: {
+    apiKey: "AIzaSyBlqcl5cRAiXsnyEikuHYh95blpVtsu-ig",
+    authDomain: "my-playlist-fee55.firebaseapp.com",
+    databaseURL: "https://my-playlist-fee55.firebaseio.com",
+    storageBucket: "my-playlist-fee55.appspot.com"
+
+
+  },
+
 
     APP: {
       // Here you can pass flags/options to your application instance

@@ -1,0 +1,9 @@
+<li>
+  {{playlist.song}} by {{playlist.artist}} from the album {{playlist.album}}
+  {{#if isImageShowing}}
+  <p><img src={{playlist.image}} alt={{playlist.album}} {{action 'imageHide'}} ></p>
+  {{else}}
+  <button {{action 'imageShow'}}>Show image</button>
+  {{/if}}
+  <button {{action 'delete' playlist}}>Delete Playlist</button>
+</li>

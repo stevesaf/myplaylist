@@ -1,0 +1,35 @@
+{{#if addNewPlaylist}}
+  <h1>New Playlist</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="artist">Artist</label>
+        {{input value=artist id="artist"}}
+      </div>
+
+      <div class="form-group">
+        <label for="song">Song</label>
+        {{input value=song id="song"}}
+      </div>
+
+      <div class="form-group">
+        <label for="album">Album</label>
+        {{input value=album id="album"}}
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="bedrooms">Number of Bedrooms</label>
+        {{input value=bedrooms id="bedrooms"}}
+      </div> -->
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button {{action 'savePlaylist1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'playlistFormShow'}}>New Playlist</button>
+{{/if}}
